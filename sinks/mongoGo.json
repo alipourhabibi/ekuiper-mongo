@@ -1,0 +1,72 @@
+{
+  "about": {
+    "trial": true,
+    "author": {
+      "name": "Ali Pourhabibi",
+      "email": "ali.Pourhabibi1379@gmail.com",
+      "company": "RahkarSanat",
+      "website": "https://rahkarsanat.ir"
+    },
+    "helpUrl": {
+      "en_US": "https://github.com/alipourhabibi/ekuiper-mongo/blob/master/README.md"
+    },
+    "description": {
+      "en_US": "This a sink plugin for mongodb, it can be used for saving the analysis data into monogodb."
+    }
+  },
+  "libs": [],
+  "properties": [
+    {
+      "name": "interval",
+      "default": 1000,
+      "optional": true,
+      "control": "text",
+      "type": "int",
+      "hint": {
+        "en_US": "the interval which you want to send data to mongodb."
+      },
+      "label": {
+        "en_US": "Interval of sending data"
+      }
+    },
+    {
+      "name": "conString",
+      "default": "mongodb://localhost:27017/",
+      "optional": true,
+      "control": "text",
+      "type": "string",
+      "hint": {
+        "en_US": "The Connection string for mongodb."
+      },
+      "label": {
+        "en_US": "ConnectionString"
+      }
+    },
+    {
+      "name": "dbName",
+      "default": "ekuiper",
+      "optional": true,
+      "control": "text",
+      "type": "string",
+      "hint": {
+        "en_US": "Database Name to save data to."
+      },
+      "label": {
+        "en_US": "DatabaseName"
+      }
+    },
+    {
+      "name": "colName",
+      "default": "ekuiper",
+      "optional": true,
+      "control": "text",
+      "type": "string",
+      "hint": {
+        "en_US": "Collection Name to save data to."
+      },
+      "label": {
+        "en_US": "CollectionName"
+      }
+    }
+  ]
+}
