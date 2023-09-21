@@ -5,6 +5,9 @@ This project contains some(one) MongoDB portable plugin(s) for [ekuiper](https:/
 - in rules set Send single to False!
 
 ## Install
+The pre-build zip file available at releases.
+
+## Build yourself
 clone the project. \
 Build the project with:
 ```sh
