@@ -67,6 +67,85 @@
       "label": {
         "en_US": "CollectionName"
       }
+    },
+    {
+      "name": "maxPoolSize",
+      "default": 16,
+      "optional": true,
+      "control": "text",
+      "type": "int",
+      "hint": {
+        "en_US": "Maximum number of connections in the MongoDB connection pool."
+      },
+      "label": {
+        "en_US": "Max Pool Size"
+      }
+    },
+    {
+      "name": "connectTimeoutMs",
+      "default": 5000,
+      "optional": true,
+      "control": "text",
+      "type": "int",
+      "hint": {
+        "en_US": "Timeout in milliseconds for establishing a new MongoDB connection."
+      },
+      "label": {
+        "en_US": "Connect Timeout (ms)"
+      }
+    },
+    {
+      "name": "serverSelTimeoutMs",
+      "default": 30000,
+      "optional": true,
+      "control": "text",
+      "type": "int",
+      "hint": {
+        "en_US": "Timeout in milliseconds for selecting a MongoDB server."
+      },
+      "label": {
+        "en_US": "Server Selection Timeout (ms)"
+      }
+    },
+    {
+      "name": "maxBufferSize",
+      "default": 0,
+      "optional": true,
+      "control": "text",
+      "type": "int",
+      "hint": {
+        "en_US": "Maximum number of items to buffer before applying backpressure. 0 means unlimited."
+      },
+      "label": {
+        "en_US": "Max Buffer Size"
+      }
+    },
+    {
+      "name": "onBufferFull",
+      "default": "drop",
+      "optional": true,
+      "control": "select",
+      "type": "string",
+      "values": ["drop", "block"],
+      "hint": {
+        "en_US": "Behaviour when buffer is full: 'drop' silently discards the item; 'block' returns an error so eKuiper applies backpressure."
+      },
+      "label": {
+        "en_US": "On Buffer Full"
+      }
+    },
+    {
+      "name": "maxRetries",
+      "default": 3,
+      "optional": true,
+      "control": "text",
+      "type": "int",
+      "hint": {
+        "en_US": "Number of times to retry a failed InsertMany before giving up."
+      },
+      "label": {
+        "en_US": "Max Retries"
+      }
     }
   ]
 }
